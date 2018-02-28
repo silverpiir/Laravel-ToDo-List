@@ -25,7 +25,6 @@ Route::group(['middleware' => 'web'], function () {
             ->withErrors($validator);
         }
         
-        // create the task..
         $task = new Task;
         $task->name = $request->name;
         $task->save();
